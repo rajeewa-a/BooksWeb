@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Feedback>
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="border p-4 mt-4 text-center">
+        <div class="row-2 pb-2">
+            <h2 class="text-primary">Customer Feedback</h2>
+        </div>
+
+        <br />
+
+    @foreach(var obj in Model)
+    {
+        <div class="card text-white bg-secondary w-100">
+          <div class="card-body">
+            <h5 class="card-title">"@obj.CustomerFeedback"</h5>
+            <p class="card-text"><small class="text-white">Created: @obj.CreatedDateTime </small></p>
+
+          </div>
+        </div>
+        <br />
+    }
+
+ </div>
+
+

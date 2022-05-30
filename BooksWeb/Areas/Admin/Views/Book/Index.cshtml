@@ -1,0 +1,46 @@
+﻿
+
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Books</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Book" asp-action="Upsert" class="btn btn-primary"> 
+                <i class="bi bi-plus-square"></i> &nbsp;
+                Add New Book
+            </a>
+        </div>
+    </div>
+</div>
+
+<br />
+
+  <table class="table table-bordered table-striped" id="myTable" style="width:100%">
+      <thead>
+          <tr>
+              <th>
+                  Title
+              </th>
+               <th>
+                  ISBN
+              </th>
+               <th>
+                  Author
+              </th>
+               <th>
+                  Category
+              </th>
+               <th>
+                  Price(Rs.)
+              </th>
+              <th></th>
+          </tr>
+      </thead>
+
+  </table>
+
+  @section Scripts{
+      <script src="~/js/book.js"></script>
+  }
